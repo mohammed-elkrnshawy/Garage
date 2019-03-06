@@ -44,8 +44,8 @@
             // 
             // menuStrip1
             // 
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(189)))), ((int)(((byte)(212)))));
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.carsToolStripMenuItem,
             this.languageToolStripMenuItem});
@@ -53,44 +53,44 @@
             // 
             // carsToolStripMenuItem
             // 
-            resources.ApplyResources(this.carsToolStripMenuItem, "carsToolStripMenuItem");
             this.carsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addEditToolStripMenuItem});
             this.carsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.carsToolStripMenuItem.Name = "carsToolStripMenuItem";
+            resources.ApplyResources(this.carsToolStripMenuItem, "carsToolStripMenuItem");
             // 
             // addEditToolStripMenuItem
             // 
-            resources.ApplyResources(this.addEditToolStripMenuItem, "addEditToolStripMenuItem");
             this.addEditToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.addEditToolStripMenuItem.Name = "addEditToolStripMenuItem";
+            resources.ApplyResources(this.addEditToolStripMenuItem, "addEditToolStripMenuItem");
             this.addEditToolStripMenuItem.Click += new System.EventHandler(this.addEditToolStripMenuItem_Click);
             // 
             // languageToolStripMenuItem
             // 
-            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
             this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.englishToolStripMenuItem,
             this.arabicToolStripMenuItem});
             this.languageToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
+            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
             // 
             // englishToolStripMenuItem
             // 
-            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
             this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
             // arabicToolStripMenuItem
             // 
-            resources.ApplyResources(this.arabicToolStripMenuItem, "arabicToolStripMenuItem");
             this.arabicToolStripMenuItem.Name = "arabicToolStripMenuItem";
+            resources.ApplyResources(this.arabicToolStripMenuItem, "arabicToolStripMenuItem");
             this.arabicToolStripMenuItem.Click += new System.EventHandler(this.arabicToolStripMenuItem_Click);
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Controls.Add(this.pictureBox1);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // pictureBox1
@@ -109,7 +109,7 @@
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
