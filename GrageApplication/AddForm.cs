@@ -209,5 +209,10 @@ namespace GrageApplication
         {
             SharedClass.KeyPress(txtRender, e);
         }
+
+        private void txtPhone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            SharedClass.KeyPress(txtPhone, e);
+        }
     }
 }
