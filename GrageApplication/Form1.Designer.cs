@@ -32,6 +32,9 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.carsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addEditToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.arabicToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
@@ -44,7 +47,8 @@
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(189)))), ((int)(((byte)(212)))));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.carsToolStripMenuItem});
+            this.carsToolStripMenuItem,
+            this.languageToolStripMenuItem});
             this.menuStrip1.Name = "menuStrip1";
             // 
             // carsToolStripMenuItem
@@ -61,6 +65,27 @@
             this.addEditToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.addEditToolStripMenuItem.Name = "addEditToolStripMenuItem";
             this.addEditToolStripMenuItem.Click += new System.EventHandler(this.addEditToolStripMenuItem_Click);
+            // 
+            // languageToolStripMenuItem
+            // 
+            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
+            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.englishToolStripMenuItem,
+            this.arabicToolStripMenuItem});
+            this.languageToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
+            // 
+            // englishToolStripMenuItem
+            // 
+            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
+            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
+            // 
+            // arabicToolStripMenuItem
+            // 
+            resources.ApplyResources(this.arabicToolStripMenuItem, "arabicToolStripMenuItem");
+            this.arabicToolStripMenuItem.Name = "arabicToolStripMenuItem";
+            this.arabicToolStripMenuItem.Click += new System.EventHandler(this.arabicToolStripMenuItem_Click);
             // 
             // panel1
             // 
@@ -102,6 +127,9 @@
         private System.Windows.Forms.ToolStripMenuItem addEditToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem arabicToolStripMenuItem;
     }
 }
 
