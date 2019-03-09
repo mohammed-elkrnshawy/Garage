@@ -32,6 +32,7 @@ namespace GrageApplication
         {
             bt_save.Enabled = true;
             bt_edit.Enabled = false;
+            button2.Enabled = false;
 
 
             txtArea.Text = txtType.Text = txtFixer.Text= txtCarTppe.Text= txtOwner.Text = txtProduction .Text= txtPhone .Text= txtNumber .Text= "";
@@ -121,6 +122,7 @@ namespace GrageApplication
         {
             bt_edit.Enabled = true;
             bt_save.Enabled = false;
+            button2.Enabled = true;
 
             SqlConnection con;
             SqlDataReader dataReader = HelperSQL.GetDataReader("Customer_selectSearch_BYID", out con, new SqlParameter("@ID", customer_ID));
@@ -164,6 +166,7 @@ namespace GrageApplication
         private void EditData()
         {
             HelperSQL.ExecutedNoneQuery("car_update_Car"
+            , new SqlParameter("@Car_id", Customer_ID)
             , new SqlParameter("@Name", txtArea.Text)
             , new SqlParameter("@Type", txtType.Text)
             , new SqlParameter("@Money_Tot", double.Parse(txtTotal.Text))
@@ -213,6 +216,18 @@ namespace GrageApplication
         private void txtPhone_KeyPress(object sender, KeyPressEventArgs e)
         {
             SharedClass.KeyPress(txtPhone, e);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DeleteData();
+            RefForm();
+        }
+
+        private void DeleteData()
+        {
+            HelperSQL.ExecutedNoneQuery("Customer_delete"
+           , new SqlParameter("@Car_ID", Customer_ID) );
         }
     }
 }
